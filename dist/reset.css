@@ -69,3 +69,19 @@ img.rounded {
 .editor-green {
   color: #aed85e
 }
+
+.reveal i{
+  font-family: 'FontAwesome';
+  font-style: normal;
+}
+
+.reveal .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  font-size: 0.5em;
+}
+
+.reveal a:link {
+  color: white
+}
