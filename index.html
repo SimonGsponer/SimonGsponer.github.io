@@ -6,23 +6,61 @@
 
 		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
-
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<script src="https://kit.fontawesome.com/5e4f937a1b.js" crossorigin="anonymous"></script>
+
 
 	</head>
 	<body>
 		<div class="reveal">
+			<div class='footer'>
+				<p>
+					
+				</p>
+			  </div>
 			<div class="slides">
 				<section>
 					<h2>Welcome!</h2>
 					<p>🚧 This website is still under construction🚧</p>
-				</section>
-				<section>
-					<p>Page 2</p>
+					&nbsp;
+					&nbsp;
+					<p>Meanwhile, here's an overview of my professional content:</p>
+					&nbsp;
+					<div class="container">
+						<div class="col">
+							<a href="https://stackoverflow.com/users/8718701/simon-david" target="_blank">
+							<i class="fa-2xl fa-solid fa-stack-overflow"></i>
+							<p>SO</p>
+							</a>
+						</div>
+						<div class="col">
+								<a href="https://medium.com/@simon.gsponer" target="_blank">
+								<i class="fa-2xl fa-solid fa-medium"></i>
+								<p>Medium</p>
+								</a>
+						</div>
+
+						<div class="col">
+							<a href="https://www.kaggle.com/simongsponer/code" target="_blank">
+							<i class="fa-2xl fa-solid fa-kaggle"></i>
+							<p>kaggle</p>
+							</a>
+						</div>
+						<div class="col">
+							<a href="https://www.linkedin.com/in/sgsponer/" target="_blank">
+							<i class="fa-2xl fa-solid fa-linkedin"></i>
+							<p>LinkedIn</p></a>
+						</div>
+						<div class="col">
+							<a href="https://github.com/SimonGsponer" target="_blank"><i class="fa-2xl fa-solid fa-github"></i>
+							<p>GitHub</p></a>
+						</div>
+						
+						</div>
 				</section>
 			</div>
 		</div>
@@ -44,3 +82,9 @@
 		</script>
 	</body>
 </html>
+<script>
+	// displayed upon load, hides when slide changes
+	Reveal.addEventListener('slidechanged', function(event) {
+	  document.querySelector('.reveal .footer').style.display = 'none';
+	});
+  </script>
